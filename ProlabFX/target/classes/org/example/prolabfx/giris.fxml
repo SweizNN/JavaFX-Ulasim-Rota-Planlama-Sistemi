@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane fx:id="girisAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="1156.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.prolabfx.Giris">
+   <children>
+      <ImageView fitHeight="730.0" fitWidth="1163.0" layoutX="-2.0" layoutY="-1.0">
+         <image>
+            <Image url="@../../../IMG_0119.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="97.0" fitWidth="110.0" opacity="0.47" smooth="false">
+         <image>
+            <Image url="@../../../download.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="249.0" layoutX="437.0" opacity="0.36">
+         <image>
+            <Image url="@../../../asd.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="girisLat" layoutX="167.0" layoutY="103.0" prefHeight="34.0" prefWidth="190.0" promptText="Konum bilgisi girin(lat)">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="girisLon" layoutX="167.0" layoutY="148.0" prefHeight="34.0" prefWidth="190.0" promptText="Konum bilgisi girin(lon)">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="girisBasZam" layoutX="167.0" layoutY="57.0" prefHeight="34.0" prefWidth="190.0" promptText="Seyahat Başlangıç Zamanı">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="girisSonDurak" layoutX="167.0" layoutY="197.0" prefHeight="34.0" prefWidth="190.0" promptText="Gidilecek Durak Adı">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></TextField>
+      <ChoiceBox fx:id="girisYolcuTur" layoutX="53.0" layoutY="277.0" prefHeight="28.0" prefWidth="157.0" />
+      <Button fx:id="bilgiGirButton" layoutX="175.0" layoutY="313.0" mnemonicParsing="false" onAction="#bilgiGir" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: BLACK; -fx-background-radius: 50;" text="Bilgileri Gir" textFill="#ff0f0f">
+         <font>
+            <Font name="Arial Black" size="19.0" />
+         </font></Button>
+      <Label fx:id="yazdirLabel" alignment="CENTER" layoutX="769.0" layoutY="1.0" prefHeight="722.0" prefWidth="387.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font></Label>
+      <Label layoutX="76.0" layoutY="240.0" text="Basım Tipi" textFill="#eb0707">
+         <font>
+            <Font name="Arial Black" size="19.0" />
+         </font></Label>
+      <ChoiceBox fx:id="girisOdemeYontem" layoutX="303.0" layoutY="277.0" prefHeight="28.0" prefWidth="157.0" />
+      <Label layoutX="298.0" layoutY="240.0" text="Ödeme Yöntemi" textFill="RED">
+         <font>
+            <Font name="Arial Black" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="odemeBilgiler" alignment="CENTER" layoutX="19.0" layoutY="353.0" prefHeight="97.0" prefWidth="513.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <WebView fx:id="webView" layoutX="381.0" layoutY="505.0" prefHeight="217.0" prefWidth="387.0" />
+   </children>
+</AnchorPane>
